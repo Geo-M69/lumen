@@ -1,0 +1,22 @@
+services:
+  server:
+    build:
+      context: ..
+      dockerfile: server/Dockerfile
+    container_name: lumen-server
+    env_file:
+      - ../.env
+    environment:
+      NODE_ENV: development
+      HOST: 0.0.0.0
+      PORT: 4000
+      CORS_ORIGIN: http://localhost:1420
+    ports:
+      - "4000:4000"
+    volumes:
+      - ..:/workspace
+      - lumen_node_modules:/workspace/node_modules
+    command: npm run dev:server
+
+volumes:
+  lumen_node_modules:

@@ -1,0 +1,18 @@
+{
+  "name": "lumen",
+  "private": true,
+  "version": "0.1.0",
+  "license": "SEE LICENSE IN LICENSE",
+  "workspaces": [
+    "apps/*",
+    "packages/*",
+    "server"
+  ],
+  "scripts": {
+    "dev:desktop": "npm --workspace apps/lumen run dev",
+    "dev:server": "npm --workspace server run dev",
+    "dev": "npm run dev:server",
+    "build": "npm --workspace packages/protocol run build && npm --workspace server run build && npm --workspace apps/lumen run build",
+    "typecheck": "npm --workspace packages/protocol run typecheck && npm --workspace server run typecheck && npm --workspace apps/lumen run typecheck"
+  }
+}
