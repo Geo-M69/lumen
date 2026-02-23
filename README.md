@@ -15,7 +15,9 @@ Private, self-hostable chat and voice app for small communities.
 1. Copy `.env.example` to `.env`.
 2. Install dependencies: `npm install`.
 3. Start server: `npm run dev:server`.
-4. Run desktop app (separate shell): `npm run dev:desktop`.
+4. Run desktop app in a native Tauri window (separate shell): `npm run dev:desktop`.
+
+If you only want the frontend dev server in browser, use: `npm run dev:web`.
 
 ## Docker
 

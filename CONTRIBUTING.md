@@ -6,7 +6,7 @@
 2. Copy `.env.example` to `.env`.
 3. Install dependencies: `npm install`.
 4. Start server: `npm run dev:server`.
-5. Start desktop app: `npm run dev:desktop`.
+5. Start desktop app (native Tauri window): `npm run dev:desktop`.
 
 ## Standards
 

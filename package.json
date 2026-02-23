@@ -9,7 +9,8 @@
     "server"
   ],
   "scripts": {
-    "dev:desktop": "npm --workspace apps/lumen run dev",
+    "dev:desktop": "npm --workspace apps/lumen run tauri dev",
+    "dev:web": "npm --workspace apps/lumen run dev",
     "dev:server": "npm --workspace server run dev",
     "dev": "npm run dev:server",
     "build": "npm --workspace packages/protocol run build && npm --workspace server run build && npm --workspace apps/lumen run build",
